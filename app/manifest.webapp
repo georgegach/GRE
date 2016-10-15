@@ -1,0 +1,29 @@
+{
+  "version": "1.0.0",
+  "name": "GRE Vocabulary",
+  "launch_path": "/index.html",
+  "description": "GRE Vocabulary (C) Magoosh",
+  "icons": {
+    "128": "/assets/logo/logo144.png"
+  },
+  "developer": {
+    "name": "George Gach",
+    "url": "http://github.com/georgegach"
+  },
+  "installs_allowed_from": [
+    "*"
+  ],
+  "default_locale": "en",
+  "permissions": {
+  },
+  "locales": {
+    "en": {
+      "name": "GRE Vocabulary",
+      "description": "GRE Vocabulary (C) Magoosh"
+    },
+    "ka": {
+      "name": "GRE ლექსიკონი",
+      "description": "GRE ლექსიკონი (C) Magoosh"
+    }
+  }
+}

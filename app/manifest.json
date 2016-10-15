@@ -1,0 +1,25 @@
+{
+  "name": "GRE Vocabulary",
+  "short_name": "GRE",
+  "icons": [
+    {
+      "src": "assets/logo/logo144.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    }, 
+    {
+      "src": "assets/logo/logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "assets/logo/logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }],
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#2196F3",
+  "theme_color": "#2196F3"
+}

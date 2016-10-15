@@ -5,7 +5,7 @@
 	<title>Vocabulary</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Asul|Marck+Script|Exo+2:100|Amita|Dosis|Nunito|Handlee" rel="stylesheet">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/style.css">
 	<script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
 </head>
 <body>
@@ -17,7 +17,7 @@
 			<input type="text" id="search" autofocus autocomplete="off" class="optional">
 			<div class="noteWrapper optional">
 				<div class="note">
-					<img src="arrow.png" alt="">
+					<img src="assets/arrow.png" alt="">
 					Search for words and <br>by description over here
 				</div>
 			</div>
@@ -40,7 +40,18 @@
 			</div>
 		</div>
 	</footer>
-	<script src="words.js"></script>
-	<script src="script.js"></script>
+	<script src="js/words.js"></script>
+	<script src="js/script.js"></script>
+	<script>
+		if('serviceWorker' in navigator) {
+			navigator.serviceWorker.register('/sw.js', { scope: '/' })
+			.then(function(registration) {
+				console.log('Service Worker Registered');
+			});
+			navigator.serviceWorker.ready.then(function(registration) {
+				console.log('Service Worker Ready');
+			});
+		}
+	</script>
 </body>
 </html>
