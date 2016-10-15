@@ -154,6 +154,7 @@ footer
 footer a
 {
 	text-decoration: none;
+	color: #aaa;
 }
 
 footer a:visited
