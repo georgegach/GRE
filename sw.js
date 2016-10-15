@@ -2,14 +2,14 @@ self.addEventListener('install', e => {
 	e.waitUntil(
 		caches.open('GRE').then(cache => {
 			return cache.addAll([
-				'/',
-				'/index.html',
-				'/css/style.css',
-				'/js/words.js',
-				'/js/script.js',
-				'/assets/arrow.png',
-				'/assets/paper2.png',
-				'/assets/paper.png',
+				'./',
+				'./index.html',
+				'./css/style.css',
+				'./js/words.js',
+				'./js/script.js',
+				'./assets/arrow.png',
+				'./assets/paper2.png',
+				'./assets/paper.png',
 				])
 			.then(() => self.skipWaiting());
 		})
