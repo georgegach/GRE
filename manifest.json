@@ -3,7 +3,7 @@
   "background_color": "#333333",
   "name": "GRE",
   "short_name": "GRE",
-  "display": "standalone",
+  "display": "fullscreen",
   "icons": [
     {
       "src": "./assets/logo/logo144.png",
