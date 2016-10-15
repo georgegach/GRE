@@ -36,16 +36,16 @@ App.search = function(word)
 }
 
 
-App.NotesFadeOut = function()
+App.notesFadeOut = function()
 {
 	$(".note, .note2").fadeTo(20000,0);
 }
 
 $(function()
 {
-	console.log(App);
+	// console.log(App);
 	App.nextWord();
-	App.NotesFadeOut();
+	App.notesFadeOut();
 
 	document.querySelector("body").addEventListener("touchstart", function(e){
 		App.nextWord();
