@@ -1,3 +1,5 @@
+
+
 html, body
 {
 	margin:0;
@@ -25,53 +27,67 @@ html, body
 	flex-direction: column;
 	justify-content: center;
 	text-align: center;
-	width: 80%;
+	padding: 0 2%;
+	/*width: 80%;*/
 
 }
 
 .word
 {
-	font-size: 5em;
+	font-size: 4em;
 	color: #f82;
 	font-family: 'Nunito', sans-serif;
 }
 
 .description
 {
-	font-size: 2em;
+	font-size: 1.5em;
 	color: #555;
 	padding: 10px 0px;
+	/*font-family: 'Dosis', cursive;*/
 	font-family: 'Asul';
 }
 
 .example
 {
-	padding: 10px 0px;
+	padding: 10px 5%;
 	color: #888;
-	font-size: 1.5em;
-	font-family: 'Dosis', cursive;
-	padding: 0px 200px;
+	font-size: 1em;
+	font-family: 'Asul';
+	/*font-family: 'Dosis', cursive;*/
 }	
+
+#search
+{
+	margin-top: 20px;
+}
+
+.noteWrapper
+{
+	display: flex;
+	justify-content: center;
+}
 
 .note
 {
 	font-family: 'Handlee';
 	color: #ccc;
-	font-size: 2em;
-	position: absolute;
-	right: 20%;
-	bottom: 28%;
+	font-size: 1em;
+	position: relative;
+	/*left: 50%;*/
+	/*top: 500px;*/
 	color: #dcb;
-	width: 500px;
+	/*width: 500px;*/
+	text-align: right;
 }
 
 .note img 
 {
-	width: 70px;
+	height: 50px;
 	opacity: 0.2;
-	position: absolute;
-	top: -40px;
-	left: 7%;
+	/*top: -50px;*/
+	/*left: -5px;*/
+	/*position: absolute;*/
 
 }
 
@@ -79,7 +95,7 @@ html, body
 {
 	font-family: 'Handlee';
 	color: #ccc;
-	font-size: 2em;
+	font-size: 1em;
 	position: absolute;
 	left: 5%;
 	color: #dcb;
@@ -129,9 +145,25 @@ footer
 	color: #aaa;
 	position: fixed;
 	width: 100%;
-	height: 120px;
 	bottom: 0;
 	font-family: 'Nunito', sans-serif;
+	padding: 10px 0;
+}
+
+
+footer a
+{
+	text-decoration: none;
+}
+
+footer a:visited
+{
+	color: #aaa;
+}
+
+footer a:hover
+{
+	color: #fff;
 }
 
 
@@ -153,4 +185,65 @@ footer
 footer img 
 {
 	max-height: 20px;
+}
+
+
+
+@media screen and (min-width: 300px) and (max-width: 500px){
+	html 
+	{
+		font-size: 70%;
+	}
+	
+	.optional
+	{
+		display: none;
+	}
+
+	footer
+	{
+		display: block !important;
+	}
+
+
+
+}
+
+
+@media screen and (min-width: 500px) and (max-width: 1000px){
+	html 
+	{
+		font-size: 100%;
+	}
+	
+	.optional
+	{
+		display: none;
+	}
+
+}
+
+
+@media screen and (min-width: 1000px) and (max-width: 1400px) {
+	html 
+	{
+		font-size: 120%;
+	}
+
+	footer
+	{
+		font-size: 90% !important;
+	}
+}
+
+@media screen and (min-width: 1400px)  {
+	html 
+	{
+		font-size: 130%;
+	}
+
+	footer
+	{
+		font-size: 70% !important;
+	}
 }

@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Vocabulary</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Asul|Marck+Script|Exo+2:100|Amita|Dosis|Nunito|Handlee" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
 	<script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
@@ -13,19 +14,20 @@
 			<div class="word">vocabulary</div>
 			<div class="description">set of words that define language linguistic nature</div>
 			<div class="example">People misleadingly propose for lack of words in English dictionary, when on the contrary it's much richer than most of english-speakers imagine</div>
-			<br><br><br>
-			<input type="text" id="search" autofocus autocomplete="off">
-			<div class="note">
-				<img src="arrow.png" alt="">
-				Search for words and <br>by description over here
+			<input type="text" id="search" autofocus autocomplete="off" class="optional">
+			<div class="noteWrapper optional">
+				<div class="note">
+					<img src="arrow.png" alt="">
+					Search for words and <br>by description over here
+				</div>
 			</div>
-			<div class="note2">
-				Hit <strong>space</strong> key to switch to next
-			</div>
+		</div>
+		<div class="note2 optional">
+			Hit <strong>space</strong> key or <strong>touch</strong> the page to switch to next
 		</div>
 	</div>
 	
-	<footer>
+	<footer class="optional"> 
 		<div class="horizontal">
 			<div class="vertical">
 				<div class="text">
@@ -33,7 +35,7 @@
 				</div>
 				<br>
 				<div class="credits">
-					Many thanks to <b>Google Fonts</b> and <strong>Magoosh</strong> for being awesome!
+					Many thanks to <a href="https://fonts.google.com/"><b>Google Fonts</b></a> and <a href="http://magoosh.com/"><strong>Magoosh</strong></a> for being awesome!
 				</div>
 			</div>
 		</div>

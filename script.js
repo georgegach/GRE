@@ -38,9 +38,7 @@ App.search = function(word)
 
 App.NotesFadeOut = function()
 {
-	$(".note, .note2").fadeOut(20000, function(){
-		console.log(10);
-	})
+	$(".note, .note2").fadeTo(20000,0);
 }
 
 $(function()
@@ -48,11 +46,27 @@ $(function()
 	console.log(App);
 	App.nextWord();
 	App.NotesFadeOut();
+
+	document.querySelector("body").addEventListener("touchstart", function(e){
+		App.nextWord();
+	}, false);
+
 });	
 
 $("#search").on("input", function(e)
 {
-	App.nextWord(App.search($("#search").val()));
+	var element = $("#search");
+	var word = element.val();
+	
+	if (word.substr(-2) == "  ")
+	{
+		element.val("");
+		element.blur();
+	}
+	else
+	{
+		App.nextWord(App.search(word));
+	}	
 })
 
 
@@ -62,3 +76,5 @@ $(document).keypress(function(e)
 		App.nextWord();
 	}
 });
+
+
