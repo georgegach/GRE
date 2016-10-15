@@ -1,8 +1,8 @@
 {
   "lang": "en",
   "background_color": "#333333",
-  "name": "GRE APP",
-  "short_name": "GRE VOC",
+  "name": "GRE",
+  "short_name": "GRE",
   "display": "fullscreen",
   "icons": [
     {
